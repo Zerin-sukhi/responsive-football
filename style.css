@@ -11,6 +11,12 @@ body{
     justify-content: space-around;
     background-color: #2D25A0;   
 }
+/* ---working of mouse---- */
+.flexible-container:hover{
+    background-color: tomato;
+    transform: scale(1.1);
+    transition: transform 1s ease-in-out;
+}
 .banner-info{
     margin-top: 207px;
 } 
@@ -90,8 +96,7 @@ font-size: 48px;
 }
 .highlights-img{
     margin-top: 167px;
-    margin-bottom: 156px;
-    
+    margin-bottom: 100px;    
 }
 .high-info{
     width: 404px;
@@ -100,15 +105,22 @@ font-size: 48px;
 .extra-container{
     text-align: center;
     margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
-#extra-logo{
+#extra-logo, .top-blogs{
     display: flex;
     justify-content: center;
     column-gap: 15px;
 }
+.thumbnail:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
 /* ----footer styles--- */
 footer{
     text-align: center;
+    margin-top: 100px;
     margin-bottom: 63px;
 } 
  #foot-icons{
@@ -118,4 +130,7 @@ footer{
 } 
 .far{
     color: black;
+}
+@media only screen {
+    
 }
