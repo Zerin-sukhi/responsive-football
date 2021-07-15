@@ -79,20 +79,20 @@ i{
 p{ 
     font-weight: normal;
     font-size: 16px;
-    margin: 0%;  }
+    margin: 0%;  
+}
 .highlights-container{
     display: flex;
     justify-content: space-between;
     row-gap: 69px;
     margin-right: 153px;
-    margin-left: 182px;
-    
+    margin-left: 182px;    
 }
 .highlights-title{
     margin-top: 224px;
     width: 469px;
-height: 120px;
-font-size: 48px;
+    height: 120px;
+    font-size: 48px;
 }
 .highlights-img{
     margin-top: 167px;
@@ -102,6 +102,7 @@ font-size: 48px;
     width: 404px;
     height: 113px;
 }
+/* ----extra styles---- */
 .extra-container{
     text-align: center;
     margin-bottom: 50px;
@@ -112,6 +113,15 @@ font-size: 48px;
     display: flex;
     justify-content: center;
     column-gap: 15px;
+}
+.blogs{
+    width: 600px;
+   color: gray; 
+}
+.blog-title, .blog-info{
+    text-align: left;
+    width: 500px;
+    padding-left: 50px;
 }
 .thumbnail:hover{
     transform: scale(1.1);
@@ -131,6 +141,46 @@ footer{
 .far{
     color: black;
 }
-@media only screen {
-    
+/* mobile devices */
+@media only screen and (max-width:688px) {
+    .flexible-container{
+        width: 100%;
+        height: 0%;
+        flex-direction: column;    
+    }    
+    .banner-img, .banner-info, .highlights-img{
+        width: 0%;
+        height: 0%;
+        flex-direction: column;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .highlights-container, .extra-container, .top-blogs, .footer img, .banner-img{
+        flex-direction: column;
+    }
+    .extra-container, .top-blogs, .highlights-container, .banner-img{
+        margin-left: 0%;
+        margin-right: 0%;
+        text-align:left;
+    }
+}
+/* tablet devices */
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .banner-img, .banner-info{
+        width: 100%;
+        height: 0%;
+        flex-direction: column;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .player, .highlights-container, .extra-container, .top-blogs, .footer img, .banner-img{
+        flex-direction: column;
+    }
+        .extra-container, .top-blogs, .highlights-container, .banner-img{
+            margin-left: 0%;
+            margin-right: 0%;
+            text-align:left;
+    }
 }
